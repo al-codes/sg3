@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<p>
+    {% for message in message_type %}
+    This is a {{ message }} message! Thanks for participating {{ name }}.
+    {% endfor %}
+</p>
+
+
+{% endblock %}
